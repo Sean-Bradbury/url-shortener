@@ -18,10 +18,19 @@
   }
 
   .nav-link {
-    @apply text-gray-text;
+    @apply text-gray-text flex items-center;
     cursor: pointer;
     &:hover {
       @apply text-black-text;
+    }
+  }
+
+  .nav.mobile {
+    .nav-link {
+      @apply text-white;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
