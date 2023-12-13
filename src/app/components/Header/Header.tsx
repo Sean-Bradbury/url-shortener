@@ -25,9 +25,9 @@ const Header = () => {
 
   return (
     <div className='flex relative w-11/12'>
-        <Image src='/img/svg/logo.svg' alt='logo' width={128} height={77} />
+        <Image src='/img/svg/logo.svg' alt='logo' width={121} height={33} />
         <Navigation isMobile={isMobile} isOpen={isOpen} />
-        <button className='absolute right-0 top-0 md:hidden' onClick={() => setIsOpen(p => !p)}>
+        <button className='absolute right-0 top-0 lg:hidden' onClick={() => setIsOpen(p => !p)}>
             <Icon type='hamburger' />
         </button>
     </div>

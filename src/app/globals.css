@@ -4,7 +4,7 @@
 
 @layer components {
   .primary-btn {
-    @apply bg-cyan text-white font-bold py-2 px-4;
+    @apply bg-cyan text-white font-bold py-4 px-10;
     border-radius: 28px;
     &:hover {
       background-color: #9AE3E3;;
@@ -18,19 +18,7 @@
   }
 
   .nav-link {
-    @apply text-gray-text flex items-center;
+    @apply flex items-center justify-center text-white font-bold text-lg lg:hover:text-black-text lg:justify-start lg:text-gray-dark lg:text-base hover:transition-all;
     cursor: pointer;
-    &:hover {
-      @apply text-black-text;
-    }
-  }
-
-  .nav.mobile {
-    .nav-link {
-      @apply text-white;
-      &:hover {
-        color: white;
-      }
-    }
   }
 }
