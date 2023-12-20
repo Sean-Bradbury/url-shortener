@@ -24,7 +24,7 @@ const Header = () => {
   }, [handleResize]);
 
   return (
-    <div className='flex relative w-11/12'>
+    <div className='flex relative'>
         <Image src='/img/svg/logo.svg' alt='logo' width={121} height={33} />
         <Navigation isMobile={isMobile} isOpen={isOpen} />
         <button className='absolute right-0 top-0 lg:hidden' onClick={() => setIsOpen(p => !p)}>
