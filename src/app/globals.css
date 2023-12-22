@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './reset.css';
+
 @layer components {
   .primary-btn {
     @apply bg-cyan text-white font-bold py-4 px-10;
