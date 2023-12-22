@@ -7,7 +7,7 @@ interface NavigationProps {
 
 const Navigation = ({isMobile, isOpen}: NavigationProps) => {
   return (
-    <div className={`nav ${!isMobile ? 'lg:flex lg:flex-row lg:ml-10 gap-10  flex-grow' : null } ${isOpen ? 'mobile flex-col bg-purple p-10 rounded-lg absolute w-full top-20 animate-fadeIn' : !isOpen ? 'hidden' : 'flex'}`}>
+    <div className={`nav ${!isMobile ? 'lg:flex lg:flex-row lg:ml-10 gap-10  flex-grow' : null } ${isOpen ? 'mobile flex-col bg-purple p-10 rounded-lg absolute w-full top-20 z-10 animate-fadeIn' : !isOpen ? 'hidden' : 'flex'}`}>
         <div className="nav-link my-7">Features</div>
         <div className="nav-link my-7">Pricing</div>
         <div className="nav-link my-7">Resources</div>
