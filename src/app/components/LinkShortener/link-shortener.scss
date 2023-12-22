@@ -1,0 +1,18 @@
+.link-shortener-form {
+    position: relative;
+    min-height: 168px;
+    background: url('/img/bg/bg-shorten-mobile.svg') no-repeat right;
+    background-color: #3A3054;
+}
+
+@media screen and (min-width: 769px) {
+    .link-shortener-form {
+        &::after {
+            content: unset;
+        }
+        
+        background: url('/img/bg/bg-shorten-desktop.svg') no-repeat center;
+        background-color: #3A3054;
+        background-size: cover;
+    }
+}
